@@ -1,3 +1,5 @@
+
+
 /*
 
 	You have N steps to climb .
@@ -23,8 +25,25 @@
 */
 #include "stdafx.h"
 
-
+int fib(int n)
+{
+	if (n <= 1)
+	{
+		return 1;
+	}
+	else
+	{
+		return fib(n - 1) + fib(n - 2);
+	}
+}
 int get_steps(int s)
 {
-	return 0;
+	if (s <= 0){
+
+	 	return 0;
+	           }
+	else
+	{
+		return fib(s);
+	}
 }
